@@ -31,20 +31,6 @@ export class UsersService {
     return newUser.save();
   }
 
-  // async login(loginUserDto: LoginUserDto): Promise<{ access_token: string }> {
-  //   const { username, password } = loginUserDto;
-
-  //   const user = await this.userModel.findOne({ username }).exec();
-  //   if (!user || !(await bcrypt.compare(password, user.password))) {
-  //     throw new UnauthorizedException('Invalid credentials');
-  //   }
-
-  //   const payload = { username: user.username, sub: user._id };
-  //   return {
-  //     access_token: this.jwtService.sign(payload),
-  //   };
-  // }
-
   async login(
     loginUserDto: LoginUserDto,
   ): Promise<{ access_token: string } | { error: string }> {
