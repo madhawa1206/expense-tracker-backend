@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "strictPropertyInitialization": false,
     "module": "commonjs",
     "declaration": true,
     "removeComments": true,
@@ -14,15 +13,7 @@
     "incremental": true,
     "skipLibCheck": true,
     "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "typeRoots": [
-      "./node_modules/@types",
-      "./src/types"
-    ]
+    "noImplicitAny": false
   },
-  "include": ["src/**/*"],
   "exclude": ["node_modules", "public"]
 }
