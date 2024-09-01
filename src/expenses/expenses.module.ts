@@ -6,7 +6,7 @@ import {
   Expense,
   ExpenseSchema,
 } from './schemas/expense.schema/expense.schema';
-import { AuthModule } from 'src/auth/auth.module';
+import { AuthModule } from '../auth/auth.module';
 
 @Module({
   imports: [
