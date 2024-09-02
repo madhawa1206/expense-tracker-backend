@@ -47,14 +47,12 @@ export class UsersService {
         access_token: this.jwtService.sign(payload),
       };
     } catch (error) {
-      // Log the error for further inspection
       console.error('Login Error:', error);
 
       if (error instanceof UnauthorizedException) {
-        throw error; // Re-throw the UnauthorizedException to be caught by the client
+        throw error;
       }
 
-      // For other unexpected errors, throw a generic internal server error
       throw new InternalServerErrorException(
         'An unexpected error occurred during login',
       );

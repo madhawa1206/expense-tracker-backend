@@ -114,11 +114,7 @@ This repository contains the backend code for the Personal Expense Tracking Web 
 
 ## Error Handling
 
-- **Monthly Expense Limit:** If a user tries to create or update an expense that exceeds the maximum monthly limit (10,000 LKR), a `400 Bad Request` error will be returned with the message `Monthly expense limit exceeded`.
-
-## Contributing
-
-Feel free to submit issues or pull requests. For any questions or suggestions, please contact [your-email@example.com].
+- **Monthly Expense Limit:** If a user tries to create or update an expense that exceeds the maximum monthly limit (10,000 LKR), a `Error message` error will be returned with the message `Monthly expense limit exceeded`.
 
 ## License
 
